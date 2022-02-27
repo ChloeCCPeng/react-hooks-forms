@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import ParentComponent from "./ParentComponent";
+import React from "react";
 
 function Form({
   firstName,
   lastName,
   handleFirstNameChange,
-  handleLastNameChange
+  handleLastNameChange,
 }) {
-  
   return (
     <form>
-      <input onChange={handleFirstNameChange} type="text" value={firstName} />
-      <input onChange={handleLastNameChange} type="text" value={lastName} />
+      <input type="text" onChange={handleFirstNameChange} value={firstName} />
+      <input type="text" onChange={handleLastNameChange} value={lastName} />
       <button type="submit">Submit</button>
     </form>
   );
